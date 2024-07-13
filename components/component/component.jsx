@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 export function Component() {
   return (
     (<div
-      className="flex flex-col min-h-[100dvh] bg-gradient-to-b from-[#fbe6e5] to-[#e9f3fc] text-[#333] dark:bg-gradient-to-b dark:from-gray-950 dark:to-gray-800 dark:text-gray-50">
+      className="flex flex-col min-h-[100dvh] bg-gradient-to-b from-[#ffc6f0] to-[#95ceff] text-[#333] ">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <CodeIcon className="h-6 w-6 text-[#4b5563]" />
@@ -146,7 +146,7 @@ export function Component() {
           </div>
         </section>
         <section
-          className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#fbe6e5] to-[#e9f3fc] dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-700">
+          className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#d5c9f6] to-[#c2caf8] ">
           <div
             className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:grid-cols-2 lg:text-left xl:gap-10">
             <div className="space-y-4 md:space-y-6">
