@@ -32,34 +32,44 @@ export function Component() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full pt-12 md:pt-24 lg:pt-32 border-b">
-          <div className="px-4 md:px-6 space-y-10 xl:space-y-16">
-            <div
-              className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
-              <div>
-                <h1
-                  className="lg:leading-tighter text-3xl font-medium tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] text-[#4b5563]">
-                  Hey There!
-                </h1>
-                <p
-                  className="mx-auto max-w-[700px] text-[#333] md:text-xl dark:text-gray-400 mt-4"> {/* Add margin-top */}
-                  I'm <span className="text-[#FF6347]">Cailyn</span>, a third year Mathematics student @ UofT.
-                </p>
-              </div>
+      <section
+  className="w-full pt-12 md:pt-24 lg:pt-32 border-b"
+  style={{
+    backgroundImage: "url(paleactgradient-freebie-1.png", // Update the path to your image
+    backgroundSize: "cover", // This makes the background cover the entire area
+    backgroundPosition: "center", // Center the image
+  }}
+>
+  <div className="px-4 md:px-6 space-y-10 xl:space-y-16">
+    <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
+      <div>
+        <h1 className="lg:leading-tighter text-3xl font-medium tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] text-[#4b5563]">
+          Hey There!
+        </h1>
+        <p className="mx-auto max-w-[700px] text-[#333] md:text-xl dark:text-gray-400 mt-4">
+          I'm <span className="text-[#FF6347]">Cailyn</span>, a third year Mathematics student @ UofT.
+        </p>
+                {/* Button for Resume */}
+                <Link href="https://drive.google.com/file/d/1TCZZhOcEsUgMW5jBPolvQBI3at_z7A84/view?usp=sharing" target="_blank">
+          <Button className="mt-4 bg-[#4b5563] text-white hover:bg-[#374151] focus-visible:ring-[#4b5563]">
+            My Resume
+          </Button>
+        </Link>
+      </div>
+      <div className="flex justify-center">
+        <div
+          className="rounded-full"
+          style={{
+            height: "400px",
+            width: "400px",
+            backgroundColor: "transparent",
+          }}
+        />
+      </div>
+    </div>
+  </div>
+</section>
 
-              <div className="flex justify-center">
-                <div
-                  className="rounded-full"
-                  style={{
-                  height: "400px", // Keep the same height as the image
-                  width: "400px",  // Keep the same width as the image
-                  backgroundColor: "transparent", // You can use 'transparent' or any other color for the placeholder
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container space-y-12 px-4 md:px-6">
             <div
