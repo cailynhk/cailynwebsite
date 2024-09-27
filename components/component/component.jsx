@@ -15,17 +15,17 @@ export function Component() {
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4b5563]"
+            className="text-sm font-medium hover:text-[#b092d7] text-[#4b5563]"
             href="https://github.com/cailynhk">
             Github
           </Link>
           <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4b5563]"
+            className="text-sm font-medium hover:text-[#b092d7] text-[#4b5563]"
             href="https://www.linkedin.com/in/cailyn-kim-30aa3a219/">
             LinkedIn
           </Link>
           <Link
-            className="text-sm font-medium hover:underline underline-offset-4 text-[#4b5563]"
+            className="text-sm font-medium hover:text-[#b092d7] text-[#4b5563]"
             href="https://devpost.com/kimcailyn?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
             Devpost
           </Link>
@@ -52,7 +52,7 @@ export function Component() {
                 {/* Button for Resume */}
                 <Link href="https://drive.google.com/file/d/1TCZZhOcEsUgMW5jBPolvQBI3at_z7A84/view?usp=sharing" target="_blank">
           <Button className="mt-4 bg-[#4b5563] text-white hover:bg-[#374151] focus-visible:ring-[#4b5563]">
-            Resume
+            My Resume
           </Button>
         </Link>
       </div>
@@ -74,9 +74,6 @@ export function Component() {
           <div className="container space-y-12 px-4 md:px-6">
             <div
               className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-
-              </div>
             </div>
             <div
               className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
@@ -149,8 +146,10 @@ export function Component() {
             </div>
           </div>
         </section>
+
+
         <section
-          className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-[#d5c9f6] to-[#c2caf8] ">
+          className="w-full py-12 md:py-24 lg:py-32 ">
           <div
             className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:grid-cols-2 lg:text-left xl:gap-10">
             <div className="space-y-4 md:space-y-6">
@@ -184,15 +183,6 @@ export function Component() {
               </div>
             </div>
             <div className="flex justify-center space-x-4 lg:justify-end">
-              <Button
-                className="bg-[#4b5563] text-white hover:bg-[#374151] focus-visible:ring-[#4b5563]">
-                Download CV
-              </Button>
-              <Button
-                className="border-[#4b5563] text-[#4b5563] hover:bg-[#4b5563]/10 focus-visible:ring-[#4b5563]"
-                variant="secondary">
-                Hire Me
-              </Button>
             </div>
           </div>
         </section>
