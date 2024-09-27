@@ -3,31 +3,31 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import '../../app/styles.css';
 
 export function Component() {
   return (
     (<div
-      className="flex flex-col min-h-[100dvh] bg-gradient-to-b from-[#ffc6f0] to-[#95ceff] text-[#333] ">
+      className="flex flex-col min-h-[100dvh] bg-[linear-gradient(to_right_top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)] text-[#333] ">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
-          <CodeIcon className="h-6 w-6 text-[#4b5563]" />
           <span className="sr-only">Portfolio</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
             className="text-sm font-medium hover:underline underline-offset-4 text-[#4b5563]"
-            href="#">
-            Projects
+            href="https://github.com/cailynhk">
+            Github
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4 text-[#4b5563]"
-            href="#">
-            About
+            href="https://www.linkedin.com/in/cailyn-kim-30aa3a219/">
+            LinkedIn
           </Link>
           <Link
             className="text-sm font-medium hover:underline underline-offset-4 text-[#4b5563]"
-            href="#">
-            Contact
+            href="https://devpost.com/kimcailyn?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
+            Devpost
           </Link>
         </nav>
       </header>
@@ -39,24 +39,23 @@ export function Component() {
               <div>
                 <h1
                   className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] text-[#4b5563]">
-                  John Doe
+                  Hey There!
                 </h1>
                 <p
-                  className="mx-auto max-w-[700px] text-[#333] md:text-xl dark:text-gray-400">
-                  Passionate software developer with expertise in full-stack web development.
+                  className="mx-auto max-w-[700px] text-[#333] md:text-xl dark:text-gray-400 mt-4"> {/* Add margin-top */}
+                  I'm Cailyn.
                 </p>
               </div>
+
               <div className="flex justify-center">
-                <img
-                  alt="Profile Picture"
+                <div
                   className="rounded-full"
-                  height={400}
-                  src="/placeholder.svg"
                   style={{
-                    aspectRatio: "400/400",
-                    objectFit: "cover",
+                  height: "400px", // Keep the same height as the image
+                  width: "400px",  // Keep the same width as the image
+                  backgroundColor: "transparent", // You can use 'transparent' or any other color for the placeholder
                   }}
-                  width={400} />
+                />
               </div>
             </div>
           </div>
@@ -66,12 +65,7 @@ export function Component() {
             <div
               className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2
-                  className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#4b5563]">Featured Projects</h2>
-                <p
-                  className="max-w-[900px] text-[#333] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Explore a selection of my recent web development projects.
-                </p>
+
               </div>
             </div>
             <div
