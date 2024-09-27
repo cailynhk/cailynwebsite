@@ -8,9 +8,9 @@ import '../../app/styles.css';
 export function Component() {
   return (
     (<div
-      className="flex flex-col min-h-[100dvh] bg-[linear-gradient(to_right_top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)] text-[#333] ">
+      className="flex flex-col min-h-[100dvh] bg-[linear-gradient(to_right_top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)] text-[#333] fade-in"> {/* Added fade-in class */}
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+      <Link className="flex items-center justify-center" href="#">
           <span className="sr-only">Portfolio</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -47,12 +47,12 @@ export function Component() {
           Hey There!
         </h1>
         <p className="mx-auto max-w-[700px] text-[#333] md:text-xl dark:text-gray-400 mt-4">
-          I'm <span className="text-[#FF6347]">Cailyn</span>, a third year Mathematics student @ UofT.
+          I'm <span className="text-[#b092d7]">Cailyn</span>, a third year Mathematics student @ UofT.
         </p>
                 {/* Button for Resume */}
                 <Link href="https://drive.google.com/file/d/1TCZZhOcEsUgMW5jBPolvQBI3at_z7A84/view?usp=sharing" target="_blank">
           <Button className="mt-4 bg-[#4b5563] text-white hover:bg-[#374151] focus-visible:ring-[#4b5563]">
-            My Resume
+            Resume
           </Button>
         </Link>
       </div>
