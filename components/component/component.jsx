@@ -10,6 +10,10 @@ export function Component() {
     (<div
       className="flex flex-col min-h-[100dvh] bg-[linear-gradient(to_right_top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)] text-[#333] fade-in"> {/* Added fade-in class */}
       <header className="px-4 lg:px-6 h-14 flex items-center">
+  {/* Left-aligned clickable text (redirects to the homepage) */}
+  <Link href="/" className="flex items-center">
+    <span className="text-sm font-medium text-[#4b5563] hover:text-[#b092d7]">(・ω ・✿)</span>
+  </Link>
       <Link className="flex items-center justify-center" href="#">
           <span className="sr-only">Portfolio</span>
         </Link>
@@ -33,12 +37,7 @@ export function Component() {
       </header>
       <main className="flex-1">
       <section
-  className="w-full pt-12 md:pt-24 lg:pt-32 border-b"
-  style={{
-    backgroundImage: "url(paleactgradient-freebie-1.png", // Update the path to your image
-    backgroundSize: "cover", // This makes the background cover the entire area
-    backgroundPosition: "center", // Center the image
-  }}
+  className="w-full pt-12 md:pt-24 lg:pt-32 "
 >
   <div className="px-4 md:px-6 space-y-10 xl:space-y-16">
     <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
@@ -70,7 +69,7 @@ export function Component() {
   </div>
 </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-12 md:py-24 lg:py-32 ">
           <div className="container space-y-12 px-4 md:px-6">
             <div
               className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -148,44 +147,26 @@ export function Component() {
         </section>
 
 
-        <section
-          className="w-full py-12 md:py-24 lg:py-32 ">
-          <div
-            className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:grid-cols-2 lg:text-left xl:gap-10">
-            <div className="space-y-4 md:space-y-6">
-              <div className="space-y-3">
-                <h2
-                  className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#4b5563]">About Me</h2>
-                <p
-                  className="mx-auto max-w-[700px] text-[#333] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  I am a passionate software developer with a strong background in full-stack web development. I have
-                  experience building modern, responsive, and scalable web applications using a variety of technologies,
-                  including React, Node.js, and MongoDB.
-                </p>
-              </div>
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="flex items-center gap-2">
-                  <CodeIcon className="w-6 h-6 text-[#4b5563]" />
-                  <span className="font-semibold text-[#333] dark:text-gray-50">JavaScript</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CodeIcon className="w-6 h-6 text-[#4b5563]" />
-                  <span className="font-semibold text-[#333] dark:text-gray-50">React</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CodeIcon className="w-6 h-6 text-[#4b5563]" />
-                  <span className="font-semibold text-[#333] dark:text-gray-50">Node.js</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CodeIcon className="w-6 h-6 text-[#4b5563]" />
-                  <span className="font-semibold text-[#333] dark:text-gray-50">MongoDB</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center space-x-4 lg:justify-end">
-            </div>
-          </div>
-        </section>
+        <section className="w-full pt-12 md:pt-24 lg:pt-32">
+  <div className="px-4 md:px-6 space-y-10 xl:space-y-16">
+    <div className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
+      <div className="space-y-4">
+        <h2 className="text-3xl font-medium tracking-tighter sm:text-4xl md:text-5xl text-[#4b5563]">
+          About Me
+        </h2>
+        <p className="max-w-[700px] text-[#333] md:text-xl dark:text-gray-400">
+          I am a passionate software developer with a strong background in full-stack web development. I have
+          experience building modern, responsive, and scalable web applications using a variety of technologies,
+          including React, Node.js, and MongoDB.
+        </p>
+      </div>
+      <div className="grid gap-4 sm:grid-cols-2">
+      </div>
+    </div>
+  </div>
+</section>
+
+
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container space-y-12 px-4 md:px-6">
             <div
@@ -233,42 +214,11 @@ export function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div
-            className="container grid items-center justify-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div className="space-y-3">
-              <h2
-                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#4b5563]">
-                Get in Touch
-              </h2>
-              <p
-                className="mx-auto max-w-[700px] text-[#333] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                I'm always excited to discuss new projects and opportunities. Feel free to reach out to me using the
-                form below.
-              </p>
-            </div>
-            <form className="mx-auto w-full max-w-sm space-y-2">
-              <Input className="w-full" placeholder="Name" type="text" />
-              <Input className="w-full" placeholder="Email" type="email" />
-              <Textarea className="w-full" placeholder="Message" />
-              <Button
-                className="bg-[#4b5563] text-white hover:bg-[#374151] focus-visible:ring-[#4b5563]"
-                type="submit">
-                Send Message
-              </Button>
-            </form>
-          </div>
-        </section>
       </main>
       <footer
         className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-[#333] dark:text-gray-400">© 2024 John Doe. All rights reserved.</p>
+        <p className="text-xs text-[#333] dark:text-gray-400"></p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-xs hover:underline underline-offset-4 text-[#4b5563]"
-            href="#">
-            Privacy
-          </Link>
         </nav>
       </footer>
     </div>)
