@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import '../../app/styles.css';
+import { ProjectSection } from "./ProjectSection";
 
 export function Component() {
+
+
   return (
     (<div
       className="flex flex-col min-h-[100dvh] bg-[linear-gradient(to_right_top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)] text-[#333] fade-in"> {/* Added fade-in class */}
@@ -69,82 +72,7 @@ export function Component() {
   </div>
 </section>
 
-        <section className="w-full py-12 md:py-24 lg:py-32 ">
-          <div className="container space-y-12 px-4 md:px-6">
-            <div
-              className="flex flex-col items-center justify-center space-y-4 text-center">
-            </div>
-            <div
-              className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
-              <div
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                <Link className="absolute inset-0 z-10" href="#">
-                  <span className="sr-only">View Project</span>
-                </Link>
-                <img
-                  alt="Project 1"
-                  className="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300 ease-in-out"
-                  height={310}
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "550/310",
-                    objectFit: "cover",
-                  }}
-                  width={550} />
-                <div className="bg-white p-4 dark:bg-gray-950">
-                  <h3 className="font-bold text-xl text-[#4b5563]">Project 1</h3>
-                  <p className="text-sm text-[#333] dark:text-gray-400">
-                    A modern web application built with React and Node.js.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                <Link className="absolute inset-0 z-10" href="#">
-                  <span className="sr-only">View Project</span>
-                </Link>
-                <img
-                  alt="Project 2"
-                  className="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300 ease-in-out"
-                  height={310}
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "550/310",
-                    objectFit: "cover",
-                  }}
-                  width={550} />
-                <div className="bg-white p-4 dark:bg-gray-950">
-                  <h3 className="font-bold text-xl text-[#4b5563]">Project 2</h3>
-                  <p className="text-sm text-[#333] dark:text-gray-400">
-                    A responsive e-commerce website built with Next.js.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                <Link className="absolute inset-0 z-10" href="#">
-                  <span className="sr-only">View Project</span>
-                </Link>
-                <img
-                  alt="Project 3"
-                  className="object-cover w-full h-48 group-hover:scale-105 transition-transform duration-300 ease-in-out"
-                  height={310}
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "550/310",
-                    objectFit: "cover",
-                  }}
-                  width={550} />
-                <div className="bg-white p-4 dark:bg-gray-950">
-                  <h3 className="font-bold text-xl text-[#4b5563]">Project 3</h3>
-                  <p className="text-sm text-[#333] dark:text-gray-400">
-                    A full-stack web application built with React and Express.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ProjectSection />
 
 
         <section className="w-full pt-12 md:pt-24 lg:pt-32">
