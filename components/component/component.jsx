@@ -1,4 +1,5 @@
 
+'use client';
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -7,8 +8,6 @@ import '../../app/styles.css';
 import { ProjectSection } from "./ProjectSection";
 
 export function Component() {
-
-
   return (
     (<div
       className="flex flex-col min-h-[100dvh] bg-[linear-gradient(to_right_top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)] text-[#333] fade-in"> {/* Added fade-in class */}
@@ -106,8 +105,6 @@ export function Component() {
 </section>
 
 </section>
-
-
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container space-y-12 px-4 md:px-6">
             <div
