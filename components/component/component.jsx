@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import '../../app/styles.css';
-import { ProjectSection } from "./ProjectSection";
+//import { ProjectSection } from "./ProjectSection";
 
 export function Component() {
   return (
@@ -70,10 +70,7 @@ export function Component() {
     </div>
   </div>
 </section>
-
-        <ProjectSection />
-
-
+          {/* Project Section */}
         <section className="w-full pt-12 md:pt-24 lg:pt-32">
         <section className="w-full pt-12 md:pt-24 lg:pt-32">
   <div className="px-4 md:px-6 space-y-10 xl:space-y-16">
@@ -83,10 +80,7 @@ export function Component() {
           About Me
         </h2>
         <p className="max-w-[700px] text-[#333] md:text-xl dark:text-gray-400">
-          I am a passionate software developer with a strong background in full-stack web development. I have
-          experience building modern, responsive, and scalable web applications using a variety of technologies,
-          including React, Node.js, and MongoDB.
-        </p>
+          Hi! I'm Cailyn, a third year Mathematics student at the University of Toronto minoring in Computer Science and Statistics. I love learning new things from other people! Outside of school and work, I'm busy helping to run the UofT Keyboard Club and trying every iced matcha latte in Toronto.        </p>
       </div>
       
       {/* Circular Image */}
@@ -111,10 +105,9 @@ export function Component() {
               className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2
-                  className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#4b5563]">Experience</h2>
+                  className="text-3xl font-medium tracking-tighter sm:text-5xl text-[#4b5563]">Experience</h2>
                 <p
                   className="max-w-[900px] text-[#333] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Check out my professional experience and timeline.
                 </p>
               </div>
             </div>
@@ -124,29 +117,23 @@ export function Component() {
                 <div className="grid gap-1 text-sm relative">
                   <div
                     className="aspect-square w-6 bg-gray-900 rounded-full absolute left-0 translate-x-[-35px] z-10 top-1 dark:bg-gray-50" />
-                  <div className="font-medium">March 2020 - Present - Software Engineer, Acme Inc.</div>
+                  <div className="font-medium">May 2024 - August 2024 - Software Developer, Bank of Montreal.</div>
                   <div className="text-[#333] dark:text-gray-400">
-                    Developed and maintained full-stack web applications using React, Node.js, and MongoDB. Collaborated
-                    with cross- functional teams to deliver high-quality software solutions.
-                  </div>
+                    EForms and Esignatures                  </div>
                 </div>
                 <div className="grid gap-1 text-sm relative">
                   <div
                     className="aspect-square w-6 bg-gray-900 rounded-full absolute left-0 translate-x-[-35px] z-10 top-1 dark:bg-gray-50" />
-                  <div className="font-medium">June 2018 - February 2020 - Frontend Developer, XYZ Corp.</div>
+                  <div className="font-medium">February 2024 - Present - STEM Instructor, Wizrobotics.</div>
                   <div className="text-[#333] dark:text-gray-400">
-                    Designed and implemented responsive user interfaces using React and CSS frameworks. Collaborated
-                    with backend developers to integrate frontend components with API endpoints.
-                  </div>
+                    Python and Java instructor.                  </div>
                 </div>
                 <div className="grid gap-1 text-sm relative">
                   <div
                     className="aspect-square w-6 bg-gray-900 rounded-full absolute left-0 translate-x-[-35px] z-10 top-1 dark:bg-gray-50" />
-                  <div className="font-medium">September 2016 - May 2018 - Intern, ABC Inc.</div>
+                  <div className="font-medium">May 2023 - August 2023 - Software Developer, Bank of Montreal.</div>
                   <div className="text-[#333] dark:text-gray-400">
-                    Gained hands-on experience in web development, participating in the development of various web
-                    applications. Learned about agile methodologies and best practices.
-                  </div>
+                    AWS                  </div>
                 </div>
               </div>
             </div>
@@ -160,24 +147,5 @@ export function Component() {
         </nav>
       </footer>
     </div>)
-  );
-}
-
-function CodeIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <polyline points="16 18 22 12 16 6" />
-      <polyline points="8 6 2 12 8 18" />
-    </svg>)
   );
 }

@@ -1,5 +1,5 @@
 'use client';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 
 export const ProjectSection = () => {
@@ -7,6 +7,7 @@ export const ProjectSection = () => {
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
+      console.log("scrolling left");
       const scrollAmount = scrollContainerRef.current.offsetWidth; // Scroll the width of the container (showing 3 projects at a time)
       scrollContainerRef.current.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     }
@@ -14,10 +15,15 @@ export const ProjectSection = () => {
 
   const scrollRight = () => {
     if (scrollContainerRef.current) {
+      console.log("scrolling right");
       const scrollAmount = scrollContainerRef.current.offsetWidth; // Scroll the width of the container (showing 3 projects at a time)
       scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    console.log('scrollContainerRef:', scrollContainerRef.current);
+  }, []);
 
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 relative">
