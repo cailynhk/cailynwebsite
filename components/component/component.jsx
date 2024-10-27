@@ -1,21 +1,42 @@
-
 'use client';
+import React, { useState } from 'react';
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import '../../app/styles.css';
 //import { ProjectSection } from "./ProjectSection";
 
 export function Component() {
+  const gradients = [
+    'linear-gradient(to right top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)',
+    'linear-gradient(to right top, #BCECFF, #C2BBFF)',
+    'linear-gradient(to right top, #FFD1FF, #FBD0C8)',
+    'linear-gradient(to right top, #FCF5EC, #BDDFF6)',
+    'linear-gradient(to right top, #98ADDA, #FCD2D3)',
+    'linear-gradient(to right top, #FBF7B8, #FACFD9)',
+    'linear-gradient(to right top, #F7CDE1, #97F7F5)',
+    'linear-gradient(to right top, #FBF7B8, #97F7F5)',
+  ];
+  const [currentGradientIndex, setCurrentGradientIndex] = useState(0);
+
+  const handleClick = () => {
+    setCurrentGradientIndex((prevIndex) => (prevIndex + 1) % gradients.length);
+  };
+
   return (
     (<div
-      className="flex flex-col min-h-[100dvh] bg-[linear-gradient(to_right_top,#f7d8e7,#f7dfec,#f8e6f1,#f9ecf5,#faf3f9,#f8f4fa,#f7f4fb,#f5f5fc,#ebf2fc,#deeff9,#d1edf3,#c7eae8)] text-[#333] fade-in"> {/* Added fade-in class */}
-      <header className="px-4 lg:px-6 h-14 flex items-center">
+      className="flex flex-col min-h-[100dvh] text-[#333] fade-in"
+      style={{ background: gradients[currentGradientIndex] }}
+      >
+      <header className="px-4 lg:px-6 h-14 flex items-center"
+      >
   {/* Left-aligned clickable text (redirects to the homepage) */}
-  <Link href="/" className="flex items-center">
-    <span className="text-sm font-medium text-[#4b5563] hover:text-[#b092d7]">(・ω ・✿)</span>
-  </Link>
+  <button
+      onClick={handleClick}
+      className="text-sm font-medium hover:text-[#b092d7] text-[#4b5563]"
+    >
+      (・ω ・✿)
+    </button>
+
       <Link className="flex items-center justify-center" href="#">
           <span className="sr-only">Portfolio</span>
         </Link>
